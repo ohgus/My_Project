@@ -1,0 +1,26 @@
+header{
+    text-align: center;
+    font-size: 20px;
+}
+h1{
+    margin-bottom: 15px;
+}
+body{
+    margin-left: 0;
+    margin-right: 0;
+}
+ul{
+    border-top: 5px solid green;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+li.gecko-info{
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+li.feed-info{
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
