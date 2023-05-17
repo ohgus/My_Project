@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오씨네 간단한 투두</title>
+    <!--css-->
+    <link rel="stylesheet" href="">
+
+</head>
+<body>
+    <div id="container">
+        <div>
+            <!--날짜-->
+            <div id="date">
+            </div>
+            <!--시간-->
+            <div id="time">
+            </div>
+            <!--안녕하세요-->
+            <form id="name">
+                <input required maxlength="15" type="text" placeholder="이름을 입력하세요.">
+                <input type="submit" value="+">
+            </form>
+            <div id="greeting" class="hidden">
+            </div>
+            <hr />
+        </div>
+        <!--투두리스트-->
+        <div id="todoContainer">
+            <p>Today To-Do list</p>
+            <div id="todo-list">
+            </div>
+            <form id="todo-form">
+                <input type="text" placeholder="오늘 할 일은?">
+                <input type="submit" value="+">
+            </form>
+        </div>
+        <!--명언들-->
+        <div id="motivations">
+            <p></p>
+            <p></p>
+        </div>
+    </div>
+</body>
+</html>
