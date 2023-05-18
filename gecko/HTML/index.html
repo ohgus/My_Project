@@ -5,32 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/gecko/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <title>Gecko Web</title>
 </head>
 <body>
     <div class="container">
-        <!-- 고정헤더 영역-->
-        <header>
-            <h1>나만의 게코일지</h1>
-        </header>
-        <!-- //고정헤더 영역-->
-        <!-- 리스트 영역 -->
-        <div class="pages">
+        <!--메인 페이지 상단부-->
+        <div id="pagename">
+            <h1>우리집 게코일지</h1>   
+            <h1 id="clock">00:00:00</h1>
+        </div>
+        <!--사용자 로그인-->
+        <div id="login">
+            <form id="logIn-Form" class="hidden">
+                <input 
+                    required
+                    maxlength="10"
+                    type="text"
+                    placeholder="이름을 입력해 주세요!"
+                    />
+                    <input type="submit" value="Log in">
+            </form>
+            <h2 class="hidden" id="greeting"></h2>
+        </div>
+        <!--다른 페이지-->
+        <div id="pages">
             <ul>
-                <li class="gecko-info">
-                    <a href="./mygecko.html">
-                        <span>우리집 게코들</span>
-                    </a>
-                </li>
-                <li class="feed-info">
-                    <a href="./feed.html">
-                        <span>먹이 세부정보</span>
+                <li>
+                    <a href="./geckotodo.html">
+                        <p>오늘 할 일</p>
                     </a>
                 </li>
             </ul>
         </div>
-        <!-- //리스트 영역 -->
-        
     </div>
+    <script src="/gecko/JS/clock.js"></script>
+    <script src="/gecko/JS/greeting.js"></script>
+    <script src="/gecko/JS/todo.js"></script>
 </body>
 </html>

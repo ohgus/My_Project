@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/gecko/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <title>도마뱀 투두리스트</title>
+</head>
+<body>
+    <div class="container">
+        <!--메인 페이지 상단부-->
+        <div id="pagename">
+            <a href="index.html">
+                <h1>게코 TO-DO LIST</h1>
+            </a>
+            <h1 id="clock">00:00:00</h1>
+        </div>
+        <div id="todo">
+            <form id="todo-form">
+                <input type="text" placeholder="오늘은 마뱀이들에게?" required />
+            </form>
+            <ul id="todo-list"></ul>    
+        </div>
+    </div>    
+    <script src="/gecko/JS/clock.js"></script>
+    <script src="/gecko/JS/todo.js"></script>
+</body>
+</html>
