@@ -1,8 +1,8 @@
-const toDOForm = document.getElementById("todo-form");
+const toDoForm = document.getElementById("todo-form");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.getElementById("todo-list");
 const TODOS_KEY = "todos";
-let toDOs = [];
+let toDos = [];
 
 function saveTodos(){
     window.localStorage.setItem(TODOS_KEY,JSON.stringify(toDos));
