@@ -1,0 +1,114 @@
+body,
+input {
+    font-family: 'Jua', sans-serif;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+/* container & 전체 */
+
+#container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container div:first-child,
+#container div:nth-child(2) {
+    width: 300px;
+}
+
+#date {
+    font-size: 2em;
+}
+
+#time {
+    font-size: 6em;
+}
+
+/* 안녕하세요 */
+
+hr {
+    margin-top: 2em;
+}
+
+.hidden {
+    display: none;
+}
+
+input[type="text"] {
+    height: 32px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgb(233,233,233);
+    margin-top: 1em;
+}
+
+input[type="submit"] {
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* todo */
+#todoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#todoContainer p {
+    font-size: 1.2em;
+}
+
+#todo-lists {
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#todo-lists p {
+    flex-grow: 10;
+    text-align: left;
+}
+
+#delBtn {
+    border: 0;
+    outline: none;
+    font-size: 5px;
+    background-color: lightsteeblue;
+    color: black;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#todo-list p.checked {
+    text-decoration: line-through;
+}
+
+/* background */
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
