@@ -30,3 +30,31 @@ form#logIn-Form {
     margin-left: 10px;
     color: darkgreen;
 }
+/* 투두 */
+#todo-list{
+    padding-left: 20px;
+}
+#todo-input{
+    margin-left: 10px;
+}
+#todo-container{
+    font-size: 1.2em;
+}
+li{
+    margin: 1em 0;
+}
+button{
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    font-size: 5px;
+    background-color: lightsteeblue;
+    color: black;
+    outline: none;
+    margin-left: 3px;
+}
+span{
+    flex-grow: 10;
+    text-align: left;
+}
