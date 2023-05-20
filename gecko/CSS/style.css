@@ -1,21 +1,28 @@
+/* 공동 */
 body{
     font-family: "Jua",sans-serif;
     text-align: center;
 }
 
-#container{
-    height: 100vh;
+.container{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 500px;
+    margin: 0 auto;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
 
 hr{
     margin-top: 2em;
 }
-
+/* 시계 */
 #clock{
     font-size: 3em;
 }
@@ -45,3 +52,30 @@ input[type="submit"]{
     cursor: pointer;
     border-radius: 10px;
 }
+
+/* 투두 */
+#todo-container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+#todo-list li{
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 10;    
+    text-align: left;
+}
+
+#delBtn{
+    border: 0;
+    outline: none;
+    font-size: 5px;
+    background-color: lightsteeblue;
+    color: black;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
